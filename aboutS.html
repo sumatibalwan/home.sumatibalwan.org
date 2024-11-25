@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Full Width Image Gallery</title>
+    <link rel="stylesheet" href="lib/css/aboutS.css" />
+  </head>
+  <header>
+    <div class="main-header">
+      <div class="small-header">
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+          "
+        >
+          <img src="images/icons/logo.png" alt="Logo" style="width: 8%" />
+          <div>
+            <h1 style="font-size: 23px; color: #fff">
+              Radhabai Hardikar Pranijat Mangal Sanstha
+            </h1>
+          </div>
+        </div>
+
+        <div class="nav-1">
+          <a href="index.html" class="add-nav-bar active">Home</a>
+        </div>
+        <div class="nav-1">
+          <a href="donation/donate.html" class="add-nav-bar">Donate</a>
+        </div>
+        <div class="nav-1">
+          <a href="contact.html" class="add-nav-bar">Contact</a>
+        </div>
+        <div class="nav-1">
+          <a href="trustees.html" class="add-nav-bar">Trustees</a>
+        </div>
+        <div class="nav-1">
+          <a href="gallery.html" class="add-nav-bar">Gallery</a>
+        </div>
+        <div class="nav-1">
+          <a href="awards.html" class="add-nav-bar">Awards</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <main>
+      <section class="image-gallery">
+        <div class="container">
+          <!-- <h2>About us</h2> -->
+          <div class="images">
+            <img src="images/ppt-1.png" style="width: 100%" />
+            <img src="images/ppt-2.png" style="width: 100%" />
+            <img src="images/ppt-3.png" style="width: 100%" />
+            <img src="images/ppt-4.png" style="width: 100%" />
+            <img src="images/ppt-5.png" style="width: 100%" />
+            <img src="images/ppt-6.png" style="width: 100%" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <h1 style="text-align: center">Thank You..!</h1>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navItems = document.querySelectorAll(".nav-1");
+
+      menuToggle.addEventListener("click", () => {
+        navItems.forEach((item) => {
+          item.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>

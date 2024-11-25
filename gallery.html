@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Your Foundation</title>
+    <link rel="stylesheet" href="lib/css/global.css" />
+    <link rel="stylesheet" href="lib/css/gallery.css" />
+  </head>
+
+  <header>
+    <div>
+      <div class="small-header">
+    
+        <div class="menu-toggle" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: start; gap: 10px;">
+          <img src="images/icons/logo.png" alt="Logo" style="width: 8%" />
+          <div>
+            <h1 class="navigation-header">
+              Radhabai Hardikar Pranijat Mangal Sanstha
+            </h1>
+          </div>
+        </div>
+
+        <div class="nav-1"><a href="index.html" class="add-nav-bar">Home</a></div>
+        <div class="nav-1"><a href="donation/donate.html" class="add-nav-bar">Donate</a></div>
+        <div class="nav-1"><a href="contact.html" class="add-nav-bar">Contact</a></div>
+        <div class="nav-1"><a href="trustees.html" class="add-nav-bar">Trustees</a></div>
+        <div class="nav-1"><a href="gallery.html" class="add-nav-bar active">Gallery</a></div>
+        <div class="nav-1"><a href="awards.html" class="add-nav-bar">Awards</a></div>
+
+      </div>
+    </div>
+  </header>
+  <body>
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="header">Our Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery/p1.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p2.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p3.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p4.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p5.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p6.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p7.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p8.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p9.jpg" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/gallery/p10.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p11.jpg" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/gallery/p12.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p13.jpg" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/gallery/p14.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p15.jpg" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/gallery/p16.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p17.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p23.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p19.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p20.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p21.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p31.jpeg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p22.jpg" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/gallery/p18.jpg" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/gallery/p25.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p28.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p27.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p26.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p29.jpg" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/p30.jpeg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navItems = document.querySelectorAll(".nav-1");
+
+      menuToggle.addEventListener("click", () => {
+        navItems.forEach((item) => {
+          item.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>
