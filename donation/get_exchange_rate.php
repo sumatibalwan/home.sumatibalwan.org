@@ -1,9 +1,12 @@
 <?php
 
-// Replace with your Fixer.io API Key
-$apiKey = '3ff60558007b9fb625bb27be6051adc1';
+require __DIR__ . '/../vendor/autoload.php';
 
-// Default currency to USD
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+$apiKey = $_ENV['API_KEY'];
+
 $baseCurrency = 'USD';
 
 if (isset($_GET['currency'])) {
