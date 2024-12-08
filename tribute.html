@@ -1,123 +1,179 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tribute to Dr. M.N. Hardikar</title>
+    <link rel="stylesheet" href="lib/css/gallery.css" />
+
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #f0f4f8, #d9e4ec);
-            color: #333;
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f0f4f8, #d9e4ec);
+        color: #333;
+      }
 
-        /* Header */
-        header {
-            text-align: center;
-            background-color: #2c3e50;
-            padding: 30px 10px;
-            color: white;
-            animation: fadeIn 2s ease-in-out;
-        }
-        header h1 {
-            font-size: 2.2em;
-            margin: 0;
-            letter-spacing: 1px;
-        }
-        header h2 {
-            font-size: 1.2em;
-            font-weight: 300;
-        }
+      /* Header */
+      header {
+        text-align: center;
+        background-color: #2c3e50;
+        padding: 30px 10px;
+        color: white;
+        animation: fadeIn 2s ease-in-out;
+      }
+      header h1 {
+        font-size: 2.2em;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+      header h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+      }
 
-        /* Container */
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 700px;
-            background: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            animation: fadeIn 2s ease-in-out;
-        }
+      /* Container */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 700px;
+        background: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        animation: fadeIn 2s ease-in-out;
+      }
 
-        /* Content */
-        .content {
-            text-align: center;
-        }
-        .content h3 {
-            font-size: 1.5em;
-            color: #2c3e50;
-        }
-        .content p {
-            line-height: 1.6;
-            font-size: 1em;
-            color: #555;
-        }
-        .content img {
-            width: 60%;
-            max-width: 300px;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .content img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+      /* Content */
+      .content {
+        text-align: center;
+      }
+      .content h3 {
+        font-size: 1.5em;
+        color: #2c3e50;
+      }
+      .content p {
+        line-height: 1.6;
+        font-size: 1em;
+        color: #555;
+      }
+      .content img {
+        width: 60%;
+        max-width: 300px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .content img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #2c3e50;
-            color: white;
-            font-size: 0.9em;
-            margin-top: 20px;
-        }
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #2c3e50;
+        color: white;
+        font-size: 0.9em;
+        margin-top: 20px;
+      }
 
-        /* Keyframes for animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+      /* Keyframes for animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
         }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="small-header">
+          <div class="menu-toggle" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
 
-<header>
-    <h1>Tribute to Dr. M.N. Hardikar</h1>
-    <h2>Honoring his legacy and dedication</h2>
-</header>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: start;
+              gap: 10px;
+            "
+          >
+            <img src="/lib/img/icons/logo.png" alt="Logo" style="width: 8%" />
+            <div>
+              <h1 class="navigation-header">
+                Radhabai Hardikar Pranijat Mangal Sanstha
+              </h1>
+            </div>
+          </div>
 
-<div class="container">
-    <div class="content">
+          <div class="nav-1">
+            <a href="index.html" class="add-nav-bar">Home</a>
+          </div>
+          <div class="nav-1">
+            <a href="donation/donate.html" class="add-nav-bar">Donate</a>
+          </div>
+          <div class="nav-1">
+            <a href="contact.html" class="add-nav-bar">Contact</a>
+          </div>
+          <div class="nav-1">
+            <a href="trustees.html" class="add-nav-bar">Trustees</a>
+          </div>
+          <div class="nav-1">
+            <a href="gallery.html" class="add-nav-bar active">Gallery</a>
+          </div>
+          <div class="nav-1">
+            <a href="awards.html" class="add-nav-bar">Awards</a>
+          </div>
+          <div class="nav-1">
+            <a href="news.html" class="add-nav-bar">Awards</a>
+          </div>
+          <div class="nav-1">
+            <a href="events.html" class="add-nav-bar">Awards</a>
+          </div>
+          <div class="nav-1">
+            <a href="tribute.html" class="add-nav-bar">Awards</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <h1 class="header">Tribute to Dr. M.N. Hardikar</h1>
+      <h2 class="header">Honoring his legacy and dedication</h2>
+    </div>
+
+    <div class="container">
+      <div class="content">
         <h3>Legacy of Compassion</h3>
         <p>
-            Dr. M.N. Hardikar generously donated one acre of land to establish a charitable trust 
-            in honor of his late mother, Radhabai. The trust, named the 
-            <strong>Radhabai Hardikar Pranijat Mangal Sanstha</strong>, continues to foster a 
-            spirit of compassion and community service.
+          Dr. M.N. Hardikar generously donated one acre of land to establish a
+          charitable trust in honor of his late mother, Radhabai. The trust,
+          named the
+          <strong>Radhabai Hardikar Pranijat Mangal Sanstha</strong>, continues
+          to foster a spirit of compassion and community service.
         </p>
-        <img src="lib/img/hardikar mens.JPG" alt="Dr. Hardikar Tribute Image">
+        <img src="lib/img/hardikar mens.JPG" alt="Dr. Hardikar Tribute Image" />
+      </div>
     </div>
-</div>
 
-<footer>
-    &copy; 2024 Radhabai Hardikar Pranijat Mangal Sanstha. All rights reserved.
-</footer>
-
-</body>
+    <footer>
+      &copy; 2024 Radhabai Hardikar Pranijat Mangal Sanstha. All rights
+      reserved.
+    </footer>
+  </body>
 </html>
-
