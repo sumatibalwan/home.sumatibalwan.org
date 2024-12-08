@@ -1,0 +1,10 @@
+.nav-item {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item.active {
+    font-weight: bold;
+    color: blue;
+    border-bottom: 2px solid blue;
+}

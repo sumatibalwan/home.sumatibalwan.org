@@ -1,23 +1,3 @@
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  width: 100%;
-  color: #000;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #333;
-}
 
 .container {
   max-width: 800px;
@@ -66,43 +46,6 @@ h2 {
   background-color: #388e3c;
 }
 
-.small-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  font-weight: 900;
-  background-color: #1d932d;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.add-nav-bar {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.add-nav-bar:hover {
-  border-bottom: 2px solid #ffcc00;
-}
-
-.add-nav-bar.active {
-  color: black;
-  border-bottom: 2px solid #ffcc00;
-}
-
-/* Menu Toggle Styles */
-.menu-toggle {
-  display: none;
-  /* Hidden by default */
-  flex-direction: column;
-  cursor: pointer;
-}
-
 .bar {
   height: 3px;
   width: 25px;
@@ -146,19 +89,19 @@ h2 {
     /* Align items to start */
   }
 
-  .nav-1 {
+  .navigation-item-container {
     display: none;
     /* Hide nav items by default */
     width: 100%;
     /* Full width for mobile */
   }
 
-  .nav-1.active {
+  .navigation-item-container.active {
     display: flex;
     /* Show active item */
   }
 
-  .nav-1.show {
+  .navigation-item-container.show {
     display: flex;
     /* Show all items when menu is active */
     flex-direction: column;

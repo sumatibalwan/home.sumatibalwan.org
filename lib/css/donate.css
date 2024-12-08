@@ -211,7 +211,7 @@ b {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.add-nav-bar {
+.navigation-item {
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
@@ -220,11 +220,11 @@ b {
 	transition: all 0.3s ease;
 }
 
-.add-nav-bar:hover {
+.navigation-item:hover {
 	border-bottom: 2px solid #ffcc00;
 }
 
-.add-nav-bar.active {
+.navigation-item.active {
 	color: black;
 	border-bottom: 2px solid #ffcc00;
 }
@@ -281,19 +281,19 @@ b {
 		/* Align items to start */
 	}
 
-	.nav-1 {
+	.navigation-item-container {
 		display: none;
 		/* Hide nav items by default */
 		width: 100%;
 		/* Full width for mobile */
 	}
 
-	.nav-1.active {
+	.navigation-item-container.active {
 		display: flex;
 		/* Show active item */
 	}
 
-	.nav-1.show {
+	.navigation-item-container.show {
 		display: flex;
 		/* Show all items when menu is active */
 		flex-direction: column;

@@ -25,12 +25,12 @@
           </div>
         </div>
 
-        <div class="nav-1"><a href="/index.html" class="add-nav-bar">Home</a></div>
-        <div class="nav-1"><a href="/donation/donate.html" class="add-nav-bar active">Donate</a></div>
-        <div class="nav-1"><a href="/contact.html" class="add-nav-bar">Contact</a></div>
-        <div class="nav-1"><a href="/trustees.html" class="add-nav-bar">Trustees</a></div>
-        <div class="nav-1"><a href="/gallery.html" class="add-nav-bar">Gallery</a></div>
-        <div class="nav-1"><a href="/awards.html" class="add-nav-bar">Awards</a></div>
+        <div class="navigation-item-container"><a href="/index.html" class="navigation-item">Home</a></div>
+        <div class="navigation-item-container"><a href="/donation/donate.html" class="navigation-item active">Donate</a></div>
+        <div class="navigation-item-container"><a href="/contact.html" class="navigation-item">Contact</a></div>
+        <div class="navigation-item-container"><a href="/trustees.html" class="navigation-item">Trustees</a></div>
+        <div class="navigation-item-container"><a href="/gallery.html" class="navigation-item">Gallery</a></div>
+        <div class="navigation-item-container"><a href="/awards.html" class="navigation-item">Awards</a></div>
 
 
       </div>
@@ -89,7 +89,7 @@
 
   <script>
     const menuToggle = document.querySelector(".menu-toggle");
-    const navItems = document.querySelectorAll(".nav-1");
+    const navItems = document.querySelectorAll(".navigation-item-container");
 
     menuToggle.addEventListener("click", () => {
       navItems.forEach((item) => {
