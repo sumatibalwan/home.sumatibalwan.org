@@ -1,117 +1,49 @@
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.contact-table {
-  tr>td {
-    padding-right: 2em;
-    padding-bottom: 1em;
-  }
-  
-}
-.contact-info {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.contact-info p b {
-  color: #333;
-}
-
-.btn-map {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #f9010a;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.btn-map:hover {
-  background-color: #388e3c;
-}
-
-.bar {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
-/* Adjustments for the main-header */
-.main-header {
-  padding: 10px;
-}
-
-.icons img,
-.icons2 img {
-  width: 30px;
-  /* Set the same width for all icons */
-  height: 30px;
-  /* Set the same height for all icons */
-  margin-left: 10px;
-  transition: transform 0.3s ease;
-  /* Ensure the transition is uniform */
-}
-
-.icons img:hover,
-.icons2 img:hover {
-  transform: scale(1.2);
-  /* Scale effect on hover */
-}
-
-.icons2 {
-  display: flex;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .small-header {
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: flex-start;
-    /* Align items to start */
+.contact-section {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 5%;
   }
 
-  .navigation-item-container {
-    display: none;
-    /* Hide nav items by default */
-    width: 100%;
-    /* Full width for mobile */
+  .contact-table {
+    tr > td {
+      padding-right: 2em;
+      padding-bottom: 1em;
+    }
+  }
+  .contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .navigation-item-container.active {
-    display: flex;
-    /* Show active item */
+  .contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
   }
 
-  .navigation-item-container.show {
-    display: flex;
-    /* Show all items when menu is active */
-    flex-direction: column;
-    /* Stack items */
+  .contact-info p b {
+    color: #333;
   }
 
-  .menu-toggle {
-    display: flex;
-    /* Show menu toggle */
+  .btn-map {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9010a;
+    border-radius: 4px;
+    text-decoration: none;
   }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .btn-map:hover {
+    background-color: #388e3c;
+  }
+
+
 }
-
-/* Existing styles remain unchanged */
